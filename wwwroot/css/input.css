@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input_game {
+      @apply flex h-8 w-8 items-center font-medium text-xl justify-center rounded border border-gray-400 peer-checked:border-gray-800;
+    }
+ 
+  }
+  
