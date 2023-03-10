@@ -1,11 +1,11 @@
-# TicTacToe
+## TicTacToe
 ### REST API для игры в крестики нолики
 
 Данный REST API имеет два POST метода
-### 1)	POST метод (/game-start) 
+#### 1)	POST метод (/game-start) 
 – данный метод возвращает json объект который служит каркасом для старта игры.
 
-#### Параметры json ответа
+##### Параметры json ответа
 - idGame –  id конкретной игры (guid)
 - nameGame – имя игры (string)
 - idPlayer – id игрока, который сделал ход (int)
@@ -14,8 +14,8 @@
 - idPlayerWin – id игрока, который выиграл (int)
 - data  –  содержит значения каждой ячейки, изменяется после каждого хода либо 1-(1 игрок) или 9-(второй игрок) (array)
 
-#### Request URL:  localhost/game-start
-#### Response body:
+##### Request URL:  localhost/game-start
+##### Response body:
 ```
 {
   "idGame": "c5a17b05-9c61-4ad7-879a-f7db7f8b1340",
@@ -37,7 +37,7 @@
 } 
 ```
 
-### 2)	POST метод (/game-flow)
+#### 2)	POST метод (/game-flow)
 Данный метод передаёт изменённый во время игры json который мы получили вызывая метод (/game-start).     
 При каждом вызове метода необходимо изменять согласно хода игрока один из элементов массива data,   
 объекта json (посредством JavaScript).   
