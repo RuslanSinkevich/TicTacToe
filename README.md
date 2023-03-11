@@ -92,8 +92,6 @@
             game.data[idGame] = game.idPlayerNext;
         else return;
 
-        game.idPlayer = game.idPlayerNext
-
         if (game.idPlayerNext == 1) {
             item.innerHTML = "O";
             game.idPlayerNext = 9;
